@@ -47,7 +47,7 @@ def commit_and_push(repo_path, commit_message, branch_name="main", commit_date=N
     # Push the changes to the specified branch
     run_git_command(["git", "push", "origin", branch_name], cwd=repo_path)
 
-    print("\nLast Command Exicuted: ".join(commit_command))
+    print("\nGit Pushed Successfully..!!")
 
 if __name__ == "__main__":
     # Replace with your repository path
