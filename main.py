@@ -54,8 +54,7 @@ if __name__ == "__main__":
     repo_path = "."
     
     # Commit message
-    # commit_message = f"Update date and time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
-    commit_message = f"Testing..."
+    commit_message = f"Update date and time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
 
     # Optionally, replace with your branch name
     branch_name = "main"
@@ -63,7 +62,7 @@ if __name__ == "__main__":
     # Optionally, set a specific commit date (e.g., "Tue Aug 19 12:34:56 2024 +0200")
     commit_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     print("\nCommit Date: ", commit_date)
-    print("Commit Messager: ", commit_message)
+    print("Commit Message: ", commit_message)
     print("Branch: ", branch_name)
 
     commit_and_push(repo_path, commit_message, branch_name, commit_date)

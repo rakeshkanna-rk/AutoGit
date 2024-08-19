@@ -26,7 +26,7 @@ Before using this script, ensure you have the following installed on your system
    Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/yourusername/AutoGit.git
+   git clone https://github.com/rakeshkanna-rk/AutoGit.git
    ```
 
 2. **Navigate to the Project Directory:**
@@ -42,14 +42,6 @@ Before using this script, ensure you have the following installed on your system
    - **`repo_path`:** Set this to the path of your local Git repository.
    - **`branch_name` (optional):** Specify the branch you want to push the changes to. Default is `"main"`.
    - **`commit_date` (optional):** Set a custom commit date in the format `"YYYY-MM-DD HH:MM:SS"` or Git's preferred format `"Tue Aug 19 12:34:56 2024 +0200"`. If not set, the current date and time will be used.
-
-4. **Install Required Python Modules:**
-
-   If any additional Python modules are required (like `json` or `datetime`, though they are standard in Python), you can install them using `pip`:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
 
 ## Usage
 
