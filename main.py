@@ -21,7 +21,7 @@ def update_json_file(file_path):
 def run_git_command(command, cwd=None):
     result = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, cwd=cwd)
     if result.returncode != 0:
-        print(f"Error: {result.stderr}")
+        print(f"\033[31mError: {result.stderr}\033[0m")
     else:
         print(result.stdout)
 
@@ -47,7 +47,7 @@ def commit_and_push(repo_path, commit_message, branch_name="main", commit_date=N
     # Push the changes to the specified branch
     run_git_command(["git", "push", "origin", branch_name], cwd=repo_path)
 
-    print("Git Pushed Successfully..!!")
+    print("\033[32mGit Pushed Successfully..!!\033[0m")
 
 if __name__ == "__main__":
     # Replace with your repository path
