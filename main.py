@@ -65,5 +65,6 @@ if __name__ == "__main__":
     print("Commit Message: ", commit_message)
     print("Branch: ", branch_name)
 
-    commit_and_push(repo_path, commit_message, branch_name, commit_date)
+    for i in range(3):
+        commit_and_push(repo_path, commit_message, branch_name, "2024-08-24 20:41:45")
 
