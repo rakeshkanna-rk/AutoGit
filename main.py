@@ -60,11 +60,14 @@ if __name__ == "__main__":
     branch_name = "main"
 
     # Optionally, set a specific commit date (e.g., "Tue Aug 19 12:34:56 2024 +0200")
-    commit_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    times = int(input("Enter the number of times to commit and push: "))
+    commit_date = input("Enter a commit date (e.g., 'YYYY-MM-DD HH:MM:SS'): ")
+    if not commit_date:
+        commit_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     print("\nCommit Date: ", commit_date)
     print("Commit Message: ", commit_message)
     print("Branch: ", branch_name)
 
-    for i in range(3):
-        commit_and_push(repo_path, commit_message, branch_name, "2024-08-24 20:41:45")
+    for i in range(times):
+        commit_and_push(repo_path, commit_message, branch_name, commit_date)
 
