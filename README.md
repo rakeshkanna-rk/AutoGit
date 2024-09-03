@@ -2,7 +2,9 @@
 
 This Python script automates the process of updating a `data.json` file with the current date and time, committing the changes, and pushing them to a specified GitHub branch. Additionally, it allows you to specify a custom commit date using Git's `--date` option.
 
-⚠️ **Warning:** This script is provided for educational purposes only. Misuse of Git’s `--date` option to falsify commit history can lead to ethical issues and potentially violate the terms of service of platforms like GitHub. Use this feature responsibly.
+> [!WARNING]
+> This script is provided for educational purposes only. Misuse of Git’s `--date` option to falsify commit history can lead to ethical issues and potentially violate the terms of service of platforms like GitHub. 
+> Use this feature responsibly.
 
 ## Features
 
